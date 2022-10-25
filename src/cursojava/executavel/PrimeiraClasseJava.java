@@ -1,5 +1,7 @@
-package cursojava.classes;
+package cursojava.executavel;
 
+import cursojava.classes.Aluno;
+import cursojava.classes.Disciplina;
 import cursojava.constantes.StatusAluno;
 
 import javax.swing.*;
@@ -16,7 +18,7 @@ public class PrimeiraClasseJava {
 
         //Tela de login
         String login = JOptionPane.showInputDialog("Informe o login");
-        String senha = JOptionPane.showInputDialog("Informe suan senha");
+        String senha = JOptionPane.showInputDialog("Informe sua senha");
 
         if (login.equalsIgnoreCase("admin") && senha.equalsIgnoreCase("admin")) {
 
@@ -103,6 +105,9 @@ public class PrimeiraClasseJava {
 
             }
 
+
+        }else{
+            JOptionPane.showMessageDialog(null,"Favor informar usuario e senha correta!");
 
         }
     }
